@@ -4,31 +4,65 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
+    margin: 0px;
 }
 
-header,
+.header,
 footer {
     background-color: #1F2937;
 }
 
-header {
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    max-width: 1100px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .navbar {
-    box-sizing: content-box;
-    width: 70%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 10px 0px;
 }
 
-.title {
+.hero-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    gap: 30px;
+    flex-wrap: wrap;
 }
+
+.hero {
+    padding: 30px 0;
+}
+
+.hero.left {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 10px;
+}
+
+button {
+    max-width: 85px;
+    background-color: #3882F6;
+    color: #E5E7EB;
+    font-weight:bold ;
+    border: 1px solid#3882F6 ;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.image.library {
+    border-radius: 10px;
+}
+
 
 .logo-text {
     font-size: 24px;
@@ -47,29 +81,65 @@ header {
 }
 
 .section-two {
+    color: #1F2937;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.section-two-wrapper {
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-header {
+    font-size: 36px;
+    font-weight: 900;
+    padding-top: 30px;
+}
+
 .tiles {
     display: flex;
+    padding-bottom: 30px;
 }
 
 .tile {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     border: 3px solid #3882F6;
     border-radius: 10px;
+    overflow: hidden;
+}
+
+.book {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+figure {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 figcaption {
     text-align: center;
+    max-width: auto;
 }
 
 .section-three {
-    padding: 100px 150px;
     background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-wrapper {
+    max-width: 1100px;
+    padding: 100px 150px;
     color: #1F2937;
     display: flex;
     flex-direction: column;
@@ -97,11 +167,21 @@ footer{
 ul {
     display: flex;
     list-style-type: none;
-    gap: 8px;
-    margin-left: auto;
+    gap: 15px;
     padding: 0;
 }
 
 a {
     text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
 }
