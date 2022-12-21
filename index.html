@@ -3,33 +3,35 @@
     <head>
         <meta charset="UTF-8">
         <title>Landing Page</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <!--This section will have a header logo and 3 navigation links-->
         <header> 
-            <h2>Council of Books</h2>
-            <ul>
-                <a href=""><li>The Citadel</li></a>
-                <a href=""><li>Categories</li></a>
-                <a href=""><li>Review a book</li></a>
-            </ul>
-        </header>
+            <div class="navbar">
+                <h2 class="logo-text">Council of Books</h2>
+                <ul>
+                    <a href="" class="secondary-text"><li>The Citadel</li></a>
+                    <a href="" class="secondary-text"><li>Categories</li></a>
+                    <a href="" class="secondary-text"><li>Review a book</li></a>
+                </ul>
+            </div>    
 
         <!--This section will have a container with text and a sign-up button. To the right it will have an image-->
-        <div class="section-one"> 
-            <div class="container">
-                <h1>Become a member</h1>
-                <p>Sign-up to become an honorary member of the council of books.</p>
-                <button>Sign up</button>
+            <div class="title"> 
+                <div class="container">
+                    <h1 class="main-text">Become a member</h1>
+                    <p class="secondary-text">Sign-up to become an honorary member of the council of books.</p>
+                    <button>Sign up</button>
+                </div>
+                <div class="image">
+                    <img src="./images/library.jpg" height="300">
+                </div>
             </div>
-            <div class="image">
-                <img src="./images/library.jpg" height="300">
-            </div>
-        </div>
-
+        </header>
         <!--This section will have a header and then 4 tiles below it-->
         <div class="section-two">
-            <h2>Categories</h2>
+            <h2>Some Categories.</h2>
             <div class="tiles">
                 <figure>
                     <div class="tile"></div>
@@ -57,8 +59,8 @@
 
         <!--This section will have a quote-->
         <div class="section-three">
-            <p><em>Listen, Morty, I hate to break it to you, but what people call “love” is just a chemical reaction that compels animals to breed. It hits hard, Morty, then it slowly fades, leaving you stranded in a failing marriage. I did it. Your parents are gonna do it. Break the cycle, Morty. Rise above. Focus on books.</em></p>
-            <h3>-Rick Sanchez, The Smartest Man in the Universe</h3>
+            <p class="quote">Listen, Morty, I hate to break it to you, but what people call “love” is just a chemical reaction that compels animals to breed. It hits hard, Morty, then it slowly fades, leaving you stranded in a failing marriage. I did it. Your parents are gonna do it. Break the cycle, Morty. Rise above. Focus on books.</p>
+            <h3 class="quote-author">-Rick Sanchez, The Smartest Man in the Universe</h3>
         </div>
 
         <div class="section-four">
