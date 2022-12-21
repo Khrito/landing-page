@@ -59,7 +59,7 @@ button {
     padding: 5px;
 }
 
-.image.library {
+.image-library {
     border-radius: 10px;
 }
 
@@ -154,6 +154,38 @@ figcaption {
 .quote-author {
     margin: 0px;
     align-self: flex-end;
+}
+
+.section-four {
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+}
+
+.sign-up-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1100px;
+    background-color:#3882F6;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+
+.sign-up-text {
+    display: flex;
+    flex-direction: column;
+    color:#E5E7EB;
+}
+
+.bottom-button {
+    max-height: 27px;
+    background-color: #3882F6;
+    color: #E5E7EB;
+    font-weight:bold ;
+    border: 1px solid#E5E7EB ;
+    border-radius: 5px;
+    padding: 5px 15px;
 }
 
 footer{
